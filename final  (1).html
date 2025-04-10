@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo App</title>
+  <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📝 Modern To-do App</h1>
+            <br>
+            <h2>For My personal Schedule Or plan for acedemic journey</h2>
+            <button class="theme-toggle" onclick="toggleTheme()">🌓 Toggle Theme</button>
+        </header>
+
+        <form class="todo-form" id="todoForm">
+            <input type="text" class="todo-input" placeholder="New task...">
+            <select class="category-select" id="categorySelect">
+                <option value="personal">Personal</option>
+                <option value="work">Work</option>
+                <option value="Assignment">Assignment</option>
+                <option value="Project">Project</option>
+                <option value="shopping">Shopping</option>
+            </select>
+            <button type="submit" class="add-btn">Add Task</button>
+        </form>
+
+        <div class="filters" id="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <div class="todo-list" id="todoList"></div>
+    </div>
+
+    <footer>
+        <p class="foot">© 2025 Todo List App. Created by Nedi Usman. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
